@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/formLayoutContainer1"
+    android:background="@color/backgroundGray">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/auth_bg"
+        android:scaleType="centerCrop"
+        android:foreground="#96222f3e"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Mamori Movie!"
+        android:textSize="18sp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/poppins"
+        android:textFontWeight="600"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/formLayoutContainer1"
+        app:layout_constraintStart_toStartOf="@id/formLayoutContainer1"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:text="Please complete each field to register"
+        android:textSize="13sp"
+        android:textFontWeight="400"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toStartOf="@id/textView3"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <LinearLayout
+        android:id="@+id/formLayoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/register_link_layout"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullNameError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your full name"
+                android:inputType="text"
+                android:background="@drawable/custom_input"
+                style="@style/Input"
+                android:autofillHints="fullName"
+                android:fontFamily="@font/poppins"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/custom_input"
+                style="@style/Input"
+                android:fontFamily="@font/poppins"
+                android:autofillHints="emailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_input"
+                style="@style/Input"
+                android:fontFamily="@font/poppins"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordConfirmationError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <EditText
+                android:id="@+id/passwordConfirmation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:background="@drawable/custom_input"
+                style="@style/Input"
+                android:fontFamily="@font/poppins"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Subscription type"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusBottomEnd="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusTopStart="30dp"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/subscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                style="@style/Input"
+                android:background="@drawable/custom_input"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:textFontWeight="600"
+            android:fontFamily="@font/poppins"
+            android:textSize="14sp"
+            android:backgroundTint="@color/mamori_priamry"
+            android:text="Sign up"
+            android:textColor="#FFFFFF"
+            android:visibility="visible"
+            android:layout_marginTop="15dp"
+            tools:visibility="visible"
+            android:onClick="onCLickSignUpButton"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_link_layout"
+        android:layout_width="409dp"
+        android:layout_height="67dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formLayoutContainer">
+
+        <TextView
+            android:id="@+id/signInLink"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="Already have an account? Sign In"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:fontFamily="@font/poppins"
+            android:textFontWeight="400"
+            android:onClick="onCliCkSignInLink"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

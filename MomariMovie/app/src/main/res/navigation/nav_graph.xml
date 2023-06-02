@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_catalog">
+
+    <fragment
+        android:id="@+id/navigation_catalog"
+        android:name="com.tamertokbaev.momari.HomeFragment"
+        android:label="fragment_catalog"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_books"
+        android:name="com.tamertokbaev.momari.PopularMoviesFragment"
+        android:label="fragment_my_books"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.tamertokbaev.momari.ProfileFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_checkout"
+        android:name="com.tamertokbaev.momari.PlaylistsFragment"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+</navigation>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mamori Movie</string>
+    <string name="catalog_header">Catalog</string>
+    <string name="home_header">Home</string>
+    <string name="home_account_username">Tamerlan Tokbayev</string>
+    <string name="home_account_email">tokbaev201536@gmail.com</string>
+    <string name="home_account_more">More</string>
+    <string name="home_account_sign_out">Sign out</string>
+    <string name="hello_blank_fragment">Empty</string>
+    <string name="downloads_catalog">Bought:</string>
+    <string name="rating_catalog">Rating:</string>
+    <string name="home_welcome_text">Welcome, Tamerlan Tokbayev</string>
+    <string name="back">Back</string>
+    <string name="type">Type</string>
+    <string name="lorem">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elit ipsum, malesuada ac sodales eu, efficitur quis lacus. Suspendisse sit amet mattis felis. Fusce ultricies nisi eget eleifend porta. Etiam faucibus suscipit nisi, nec fermentum justo aliquam quis. Nunc non purus fermentum, semper sapien vel, vehicula neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque sit amet erat placerat, iaculis odio nec, elementum mi. Ut sapien felis, posuere euismod dolor sed, faucibus auctor libero. Donec neque quam, pulvinar eu orci at, suscipit aliquam urna. Phasellus sollicitudin sapien et elit auctor, at pretium velit gravida. Fusce semper sapien sit amet dapibus lacinia.
+
+Morbi felis sapien, aliquam nec sagittis vitae, scelerisque non nibh. Fusce eu porta erat. Duis tristique, odio sit amet mattis hendrerit, nibh purus rutrum erat, at ullamcorper neque eros ac orci. Donec sed tincidunt leo. Sed ac vulputate eros, vitae vehicula sapien. In at ipsum nec ligula tristique lacinia id et dolor. Cras quis urna scelerisque, egestas ligula ac, laoreet nisi. Duis tincidunt molestie arcu, vel tincidunt lacus euismod nec. Pellentesque id dolor condimentum est scelerisque facilisis sit amet nec ligula. Etiam convallis iaculis tellus eu condimentum. Aenean auctor euismod lacus, nec rhoncus orci blandit vitae. Fusce in luctus risus. Pellentesque diam nisi, mollis sed placerat sit amet, iaculis eget ex. Nunc pharetra vulputate nisi sed tristique. Nam sed elementum dolor, et scelerisque arcu. Donec dignissim fringilla urna.
+    </string>
+    <string name="home_add_card">Add card</string>
+</resources>
